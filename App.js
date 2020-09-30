@@ -13,9 +13,8 @@ export default function App() {
     >
       <View
         style={{
-          width: 400,
+          width: 100,
           height: 100,
-          flexShrink: 1, // if Other view overflow then it will srink to fit
           backgroundColor: "dodgerblue",
         }}
       />
@@ -24,6 +23,9 @@ export default function App() {
           width: 100,
           height: 100,
           backgroundColor: "gold",
+          top: 20,
+          left: 20,
+          position: "absolute", // relative
         }}
       />
       <View
