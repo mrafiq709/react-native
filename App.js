@@ -9,16 +9,13 @@ export default function App() {
         flexDirection: "row",
         justifyContent: "center",
         alignItems: "center",
-        alignContent: "center",
-        flexWrap: "wrap",
       }}
     >
       <View
         style={{
-          flexBasis: 100, // weidth or height
-          flexGrow: 1,
-          //width: 100,
+          width: 400,
           height: 100,
+          flexShrink: 1, // if Other view overflow then it will srink to fit
           backgroundColor: "dodgerblue",
         }}
       />
