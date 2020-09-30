@@ -15,7 +15,9 @@ export default function App() {
     >
       <View
         style={{
-          width: 100,
+          flexBasis: 100, // weidth or height
+          flexGrow: 1,
+          //width: 100,
           height: 100,
           backgroundColor: "dodgerblue",
         }}
@@ -32,20 +34,6 @@ export default function App() {
           width: 100,
           height: 100,
           backgroundColor: "tomato",
-        }}
-      />
-      <View
-        style={{
-          width: 100,
-          height: 100,
-          backgroundColor: "grey",
-        }}
-      />
-      <View
-        style={{
-          width: 100,
-          height: 100,
-          backgroundColor: "greenyellow",
         }}
       />
     </View>
