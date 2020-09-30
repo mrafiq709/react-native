@@ -10,23 +10,28 @@ import {
   Alert,
   Platform,
   StatusBar,
+  Dimensions,
 } from "react-native";
 import { NativeModules } from "react-native";
-
+import {
+  useDimensions,
+  useDeviceOrientation,
+} from "@react-native-community/hooks";
 export default function App() {
+  //console.log(Dimensions.get("screen"));
+  //console.log(useDimensions());
+  //console.log(useDeviceOrientation());
+
+  const { landscape } = useDeviceOrientation();
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Test</Text>
-      <Button
-        color="orange"
-        title="Clicke Me"
-        onPress={() =>
-          Alert.alert("Title", "Message", [
-            { text: "YES", onPress: () => console.log("YES") },
-            { text: "NO", onPress: () => console.log("NO") },
-          ])
-        }
-      />
+      <View
+        style={{
+          width: "100%",
+          height: landscape ? "100%" : "30%",
+          backgroundColor: "dodgerblue",
+        }}
+      ></View>
     </SafeAreaView>
   );
 }
