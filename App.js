@@ -14,19 +14,7 @@ export default function App() {
         alignItems: "center",
       }}
     >
-     <View
-      style={{
-        backgroundColor: "dodgerblue",
-        height: 100,
-        width: 100,
-        borderWidth: 10,
-        borderColor: "royalblue",
-        borderRadius: 10,
-        borderTopWidth: 20,
-        borderTopLeftRadius: 50,
-      }}
-     >
-     </View>
+     <AppText>I Love React Native</AppText>
     </View>
   );
 }
