@@ -12,7 +12,19 @@ export default function App() {
         alignItems: "center",
       }}
     >
-      <MaterialCommunityIcons name="email" size={200} color="dodgerblue"/>
+      <View
+        style={{
+          backgroundColor: "dodgerblue",
+          width: 100,
+          height: 100,
+          shadowColor: "grey",
+          shadowOffset: {width: 0, height: 10},
+          shadowOpacity: 1,
+          shadowRadius: 10,
+          elevation: 20,
+        }}
+      ></View>
+      
     </View>
   );
 }
