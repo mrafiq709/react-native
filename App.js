@@ -5,8 +5,22 @@ import WelcomeScreen from "./app/screens/WelcomeScreen";
 import {MaterialCommunityIcons} from '@expo/vector-icons';
 
 import AppButtn from './app/component/AppButton';
+import Card from "./app/component/Card";
+
 export default function App() {
   return (
-    <WelcomeScreen />
+    <View
+      style={{
+        backgroundColor: "#f8f4f4",
+        padding: 20,
+        paddingTop: 50,
+      }}
+    >
+      <Card
+        title="Red jacker for sale"
+        subTitle="$100"
+        image={require("./app/assets/jacket.jpg")}
+      ></Card>
+    </View>
   );
 }
