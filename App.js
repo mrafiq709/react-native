@@ -3,6 +3,8 @@ import { View, Text } from "react-native";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import {MaterialCommunityIcons} from '@expo/vector-icons';
+
+import AppText from './app/component/AppText';
 export default function App() {
   return (
     <View
@@ -12,20 +14,7 @@ export default function App() {
         alignItems: "center",
       }}
     >
-     <Text
-      style={{
-        //fontFamily: "Roboto",
-        fontSize: 30,
-        fontStyle: "italic",
-        color: "tomato",
-        textTransform: "capitalize",
-        //textDecorationLine: "line-through",
-        textAlign: "center",
-        lineHeight: 30,
-      }}
-     >
-      i love react native. this is my first reactnative apps. here is some more text.
-     </Text> 
+     <AppText>I Love React Native</AppText>
     </View>
   );
 }
