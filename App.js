@@ -6,10 +6,10 @@ import {MaterialCommunityIcons} from '@expo/vector-icons';
 
 import AppButtn from './app/component/AppButton';
 import Card from "./app/component/Card";
-import ListingDetails from "./app/screens/ListingDetails";
+import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
 
 export default function App() {
   return (
-    <ListingDetails/>
+    <ListingDetailsScreen></ListingDetailsScreen>
   );
 }
